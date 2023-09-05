@@ -5,7 +5,9 @@ ul{
     overflow: hidden;
     background-color: antiquewhite;
 }
-
+.binair{
+    list-style-type:bullets;
+}
 
 
 li{float: left;
