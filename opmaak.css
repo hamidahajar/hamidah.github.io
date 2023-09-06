@@ -12,7 +12,8 @@ ul{
     overflow:hidden;
     background-color:antiquewhite;
 }
-
+body{
+    margin: 20px;
 
 li{float: left;
 }
