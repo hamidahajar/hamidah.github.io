@@ -1,6 +1,5 @@
-
-<!DOCTYPE html> <!--dit is de homepage van mijn site-->
-<html> <!--dit i het html-element--> 
+<!DOCTYPE html>
+<html>
 <head>
     <title>Mijn website</title>
     <link rel="stylesheet" type="text/css" href="opmaak.css">
@@ -8,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: aquewhite;
+            background-color: aqua;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -30,34 +30,51 @@
             color: #666;
             font-size: 18px;
         }
+
+        /* Voeg de volgende CSS-regels toe om de menu-items horizontaal weer te geven */
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Maakt een flexbox-container */
+        }
+
+        header nav ul li {
+            margin-right: 20px; /* Voegt ruimte toe tussen de menu-items */
+        }
+
+        header nav ul li:last-child {
+            margin-right: 0; /* Verwijdert de rechtermarge van het laatste menu-item */
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <header>
-        
         <nav>
             <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="binairstelsel.html">Uitleg binairstelsel</a></li>
-                <li> <a href="kleurmodellen.html">Kleurmodellen</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="binairstelsel.html">Uitleg binairstelsel</a></li>
+                <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
             </ul>
         </nav>
     </header>
-    <h1> welkom op mijn Portfolio</h1>
-    <section id="intro"> 
+    <h1>welkom op mijn Portfolio</h1>
+    <section id="intro">
         <h2>Over Mij</h2>
         <div class="project">
-            <img src="project 1.png" with=200 height=200"  alt="Project 1">
+            <img src="project1.png" width="200" height="200" alt="Project 1">
             <h3>Project 2</h3>
             <p>Dit is een beschrijving van mijn tweede project.</p>
         </div>
     </section>
 
-    <img src="welcome_to_my_page.jpg" with="200"height=200 alt="Deze site is nog niet af">
+    <img src="welcome_to_my_page.jpg" width="200" height="200" alt="Deze site is nog niet af">
     <footer>
         <p>&copy; 2023 [Hamida Hajar]</p>
     </footer>
-
-
 </body>
 </html>
