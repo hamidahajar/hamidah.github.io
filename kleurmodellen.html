@@ -30,6 +30,26 @@
             color: #666;
             font-size: 18px;
         }
+
+        /* Voeg de volgende CSS-regels toe om de menu-items horizontaal weer te geven */
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Maakt een flexbox-container */
+        }
+
+        ul li {
+            margin-right: 20px; /* Voegt ruimte toe tussen de menu-items */
+        }
+
+        ul li:last-child {
+            margin-right: 0; /* Verwijdert de rechtermarge van het laatste menu-item */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -43,4 +63,5 @@
     <img src="kleurenmodellen.png" width="400" height="400" alt="Deze site is nog niet af">
 </body>
 </html>
+
 
