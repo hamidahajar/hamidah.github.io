@@ -23,6 +23,10 @@ ul{
     overflow:hidden;
     background-color:antiquewhite;
 }
+ .example {
+            margin-left: 20px;
+            font-family: "Courier New", monospace;
+        }
 body{
     margin: 20px;
 }
