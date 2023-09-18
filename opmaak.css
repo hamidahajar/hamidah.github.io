@@ -1,9 +1,20 @@
+header {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+nav {
+    display: inline-block; 
+    margin: 0 auto; 
+    
+}
 ul{
+    
     list-style-type:none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: antiquewhite;
+    
 }
 .binair{
     list-style-type:bullets;
@@ -46,12 +57,16 @@ li a :hover{
         }
 
         h1 {
+            text-align: center;
             color: #333;
         }
-
+        h2{
+            padding-left: 150px;
+        }
         p {
             color: #666;
             font-size: 18px;
+            padding-left: 150px;
         }
 
         /* Voeg de volgende CSS-regels toe om de menu-items horizontaal weer te geven */
@@ -73,3 +88,39 @@ li a :hover{
             text-decoration: none;
             color: #333;
         }
+        .project{
+            padding-left: 150px;
+        }
+        footer {
+            padding: 20px;
+            background-color:#c9c96b ; 
+            margin-top: 25px;
+        }
+        .card {
+            box-sizing: border-box;
+            width: 225px;
+            height: 254px;
+            background: rgba(255, 255, 255, 0.896);
+            border: 1px solid white;
+            box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+            backdrop-filter: blur(6px);
+            border-radius: 17px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            font-weight: bolder;
+            color: black;
+          }
+          
+          .card:hover {
+            border: 1px solid black;
+            transform: scale(1.05);
+          }
+          
+          .card:active {
+            transform: scale(0.95) rotateZ(1.7deg);
+          }
