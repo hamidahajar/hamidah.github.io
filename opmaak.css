@@ -6,7 +6,9 @@ header {
 nav {
     display: inline-block; 
     margin: 0 auto; 
-    
+}
+    img {
+  float: right;
 }
 ul{
     
