@@ -16,7 +16,7 @@ ul{
     overflow: hidden;
     
 }
-.binair{
+ul.binair{
     list-style-type:bullets;
     margin:0;
     padding:0;
