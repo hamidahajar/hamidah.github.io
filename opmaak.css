@@ -17,11 +17,12 @@ ul{
     
 }
 ul.binair{
-    list-style-type:bullets;
+    list-style-type:none;
     margin:0;
     padding:0;
     overflow:hidden;
     background-color:antiquewhite;
+    width: 50px;
 }
  .example {
             margin-left: 20px;
