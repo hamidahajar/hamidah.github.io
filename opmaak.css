@@ -16,6 +16,7 @@ ul{
     overflow: hidden;
     
 }
+ul.a {list-style-type: circle;}
 ul.binair{
     list-style-type:none;
     margin:0;
