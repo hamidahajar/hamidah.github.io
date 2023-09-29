@@ -9,9 +9,12 @@ nav {
 }
 
 ul{
-    
     list-style-type:circle;
     overflow: hidden;
+    backround-color: antiquewhite;
+    width: 550px;
+    margin:0;
+  
     
 }
 ul.a {list-style-type: circle;
