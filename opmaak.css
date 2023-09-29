@@ -19,7 +19,8 @@ ul{
     
 }
 ul.a {list-style-type: circle;
-     background-color:antiquewhite;}
+     background-color:antiquewhite;
+     width: 550px;}
 ul.binair{
     list-style-type:circle;
     overflow:hidden;
