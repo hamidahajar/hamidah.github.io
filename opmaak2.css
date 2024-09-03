@@ -1,52 +1,78 @@
- body {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: white;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-            font-size: 18px;
-        }
-
-        /* Voeg de volgende CSS-regels toe om de menu-items horizontaal weer te geven */
-        header nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex; /* Maakt een flexbox-container */
-        }
-
-        header nav ul li {
-            margin-right: 20px; /* Voegt ruimte toe tussen de menu-items */
-        }
-
-        header nav ul li:last-child {
-            margin-right: 0; /* Verwijdert de rechtermarge van het laatste menu-item */
-        }
-
-        header nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-#para1 {
-  text-align: center;
-  color: black;
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
 }
-#para2 {
-  text-align: center;
-  color: red;
+
+.third-level-menu > li
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level-menu > li:hover { background: #CCCCCC; }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: #999999;
+}
+.second-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 150px;
+    background: #999999;
+}
+.top-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+.top-level-menu a:hover { color: #000000; }
 }
